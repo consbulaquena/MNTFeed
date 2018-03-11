@@ -14,8 +14,6 @@ class ArticleCell: UITableViewCell {
     @IBOutlet var desc: UILabel!
     
     
-    
-
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
