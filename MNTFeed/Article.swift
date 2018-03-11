@@ -9,7 +9,8 @@
 import UIKit
 
 class Article: NSObject {
-    //made in NSObject
+    
+    //made in NSObject, identified vars
     var headline: String?
     var desc: String?
     var url: String?
