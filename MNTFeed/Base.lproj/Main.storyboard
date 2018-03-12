@@ -128,10 +128,10 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
-        <!--View Controller-->
+        <!--Webview View Controller-->
         <scene sceneID="uXU-qP-jwu">
             <objects>
-                <viewController id="gbH-Q1-G4G" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="web" id="gbH-Q1-G4G" customClass="WebviewViewController" customModule="MNTFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c3P-Dz-vqX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,7 +141,11 @@
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <navigationItem title="Newsfeed" id="Lem-G0-WOH">
-                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="gEC-qp-n22"/>
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="gEC-qp-n22">
+                                            <connections>
+                                                <segue destination="BYZ-38-t0r" kind="show" id="BAH-1h-o3U"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -176,6 +180,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gIq-FC-1aj"/>
                     </view>
+                    <connections>
+                        <outlet property="webview" destination="pQC-I7-acA" id="N4K-5m-HUB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tAG-tq-zx3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
