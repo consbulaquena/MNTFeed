@@ -11,6 +11,9 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet var tableView: UITableView!
     
+    var articles: [Article]? = []
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,13 +34,37 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 print(error)
                 return
             }
+            
+            //empty articles array
+            self.articles = [Article]()
+            
+            
+            
             //JSON serialization - do try catch block, download JSON, data is URL request
             //String to anyobject - give JSON in format of dictionary
+            
             do {
                 let json = try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as! [String: AnyObject]
                //articles is an array of dictionary, get article
-                let = 
-                
+                if let articlesFromJson = ["articles"] as? [[String: AnyObject]] {// receive value from dictionary
+                //Go each article and extract - for loop
+                    for articleFromJson in articlesFromJson {
+                       let article = Article()
+                        
+  
+                        if let title = articleFromJson["title"] as? String, let desc = articleFromJson["description"] as? String, let url = articleFromJson["url"] as? String, let urlToImage = articleFromJson["urlToImage"] as? String {
+                            
+
+                        article.headline = title
+                        article.desc = desc
+                        article.url = url
+                        article.imageUrl = urlToImage
+                        }
+                        
+                        
+                    }
+            
+                }
                 
             } catch let error {
                 print(error)
