@@ -23,7 +23,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func fetchArticles(){
         let urlRequest = URLRequest(url: URL(string: "https://newsapi.org/v2/top-headlines?sources=medical-news-today&apiKey=c8e6352d8a1840dbb7370b5f159f8f4b")!)
         
-        //This will give data = JSon, response = ok? error =error
+        //This will give data = Json, response = ok? error =error
         let task = URLSession.shared.dataTask(with: urlRequest) { (data,response,error) in
             
             if error != nil {
