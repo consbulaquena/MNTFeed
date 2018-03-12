@@ -6,6 +6,7 @@ Newsfeed App for Medical News Today
 
 ### Features
 <ul><li>Newsfeed from Medical News Today API </li>
+<li>Latest headlines displayed in TableView </li>
 <li>JSON Parsing </li>
 </ul>
 
