@@ -13,12 +13,24 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        //Initial is it working
+        
+        //function will fetch all articles when view did load
+        fetcharticles()
+
     }
 
+    func fetcharticles(){
+        //1 Create a URL request, url is a string from MNT api
+        let urlRequest = URLRequest(url: URL(string:
+            "https://newsapi.org/v2/top-headlines?sources=medical-news-today&apiKey=c8e6352d8a1840dbb7370b5f159f8f4b")!)
+        
+        
+    }
+    
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "articleCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "articleCell", for: indexPath) as! ArticleCell
+        
         return cell
     }
     
@@ -27,7 +39,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return 1
     }
     
 }
