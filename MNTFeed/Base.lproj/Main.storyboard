@@ -128,5 +128,58 @@
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="uXU-qP-jwu">
+            <objects>
+                <viewController id="gbH-Q1-G4G" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c3P-Dz-vqX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLe-OB-lI8">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <items>
+                                    <navigationItem title="Newsfeed" id="Lem-G0-WOH">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="gEC-qp-n22"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GSD-eM-fk7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pQC-I7-acA">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="GSD-eM-fk7" secondAttribute="bottom" constant="647" id="17p-4A-KjR"/>
+                            <constraint firstItem="GSD-eM-fk7" firstAttribute="leading" secondItem="cLe-OB-lI8" secondAttribute="leading" id="7Nu-4m-c3x"/>
+                            <constraint firstItem="GSD-eM-fk7" firstAttribute="leading" secondItem="c3P-Dz-vqX" secondAttribute="leading" id="DNp-i3-khB"/>
+                            <constraint firstItem="GSD-eM-fk7" firstAttribute="top" secondItem="c3P-Dz-vqX" secondAttribute="top" id="JmA-2y-KZf"/>
+                            <constraint firstItem="pQC-I7-acA" firstAttribute="top" secondItem="cLe-OB-lI8" secondAttribute="bottom" id="NCD-z5-dyQ"/>
+                            <constraint firstAttribute="trailing" secondItem="GSD-eM-fk7" secondAttribute="trailing" id="YS0-iw-RZM"/>
+                            <constraint firstItem="pQC-I7-acA" firstAttribute="bottom" secondItem="gIq-FC-1aj" secondAttribute="bottom" id="YwC-OA-p4n"/>
+                            <constraint firstItem="GSD-eM-fk7" firstAttribute="leading" secondItem="pQC-I7-acA" secondAttribute="leading" id="cgs-fJ-17n"/>
+                            <constraint firstItem="cLe-OB-lI8" firstAttribute="leading" secondItem="gIq-FC-1aj" secondAttribute="leading" id="d64-tX-6A1"/>
+                            <constraint firstItem="pQC-I7-acA" firstAttribute="top" secondItem="cLe-OB-lI8" secondAttribute="bottom" id="eFk-lD-WbP"/>
+                            <constraint firstItem="GSD-eM-fk7" firstAttribute="trailing" secondItem="cLe-OB-lI8" secondAttribute="trailing" id="edT-Zb-ZG9"/>
+                            <constraint firstItem="pQC-I7-acA" firstAttribute="trailing" secondItem="gIq-FC-1aj" secondAttribute="trailing" id="fp2-J5-n6W"/>
+                            <constraint firstItem="cLe-OB-lI8" firstAttribute="top" secondItem="GSD-eM-fk7" secondAttribute="bottom" id="nso-wJ-LqW"/>
+                            <constraint firstItem="cLe-OB-lI8" firstAttribute="trailing" secondItem="gIq-FC-1aj" secondAttribute="trailing" id="pRt-HO-Xhz"/>
+                            <constraint firstItem="GSD-eM-fk7" firstAttribute="trailing" secondItem="pQC-I7-acA" secondAttribute="trailing" id="pnu-Zo-WeP"/>
+                            <constraint firstItem="pQC-I7-acA" firstAttribute="leading" secondItem="gIq-FC-1aj" secondAttribute="leading" id="tJN-dr-YKt"/>
+                            <constraint firstItem="GSD-eM-fk7" firstAttribute="bottom" secondItem="cLe-OB-lI8" secondAttribute="top" id="txK-uG-r9g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gIq-FC-1aj"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tAG-tq-zx3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="837.60000000000002" y="117.39130434782609"/>
+        </scene>
     </scenes>
 </document>

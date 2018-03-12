@@ -15,6 +15,7 @@
 		006FEEB32055CF43004C9E94 /* ArticleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006FEEB22055CF43004C9E94 /* ArticleCell.swift */; };
 		006FEEB52055D15A004C9E94 /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006FEEB42055D15A004C9E94 /* Article.swift */; };
 		006FEEB72055DFEA004C9E94 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 006FEEB62055DFEA004C9E94 /* README.md */; };
+		006FEEB92056C254004C9E94 /* WebviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006FEEB82056C254004C9E94 /* WebviewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		006FEEB22055CF43004C9E94 /* ArticleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleCell.swift; sourceTree = "<group>"; };
 		006FEEB42055D15A004C9E94 /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
 		006FEEB62055DFEA004C9E94 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		006FEEB82056C254004C9E94 /* WebviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebviewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 		006FEE942055BBE6004C9E94 = {
 			isa = PBXGroup;
 			children = (
+				006FEEB82056C254004C9E94 /* WebviewViewController.swift */,
 				006FEEB62055DFEA004C9E94 /* README.md */,
 				006FEE9F2055BBE6004C9E94 /* MNTFeed */,
 				006FEE9E2055BBE6004C9E94 /* Products */,
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				006FEEB52055D15A004C9E94 /* Article.swift in Sources */,
+				006FEEB92056C254004C9E94 /* WebviewViewController.swift in Sources */,
 				006FEEA32055BBE6004C9E94 /* ViewController.swift in Sources */,
 				006FEEA12055BBE6004C9E94 /* AppDelegate.swift in Sources */,
 				006FEEB32055CF43004C9E94 /* ArticleCell.swift in Sources */,
