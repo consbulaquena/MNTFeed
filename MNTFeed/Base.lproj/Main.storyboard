@@ -138,10 +138,14 @@
                         <subviews>
                             <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cLe-OB-lI8">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="YWn-fc-AP0"/>
+                                </constraints>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <items>
                                     <navigationItem title="Newsfeed" id="Lem-G0-WOH">
-                                        <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="gEC-qp-n22">
+                                        <barButtonItem key="leftBarButtonItem" title="&lt; BACK" id="gEC-qp-n22">
+                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <connections>
                                                 <segue destination="BYZ-38-t0r" kind="show" id="BAH-1h-o3U"/>
                                             </connections>
@@ -149,34 +153,30 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GSD-eM-fk7">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pQC-I7-acA">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </webView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5MS-R2-faf">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="hmZ-bn-BLg"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="GSD-eM-fk7" secondAttribute="bottom" constant="647" id="17p-4A-KjR"/>
-                            <constraint firstItem="GSD-eM-fk7" firstAttribute="leading" secondItem="cLe-OB-lI8" secondAttribute="leading" id="7Nu-4m-c3x"/>
-                            <constraint firstItem="GSD-eM-fk7" firstAttribute="leading" secondItem="c3P-Dz-vqX" secondAttribute="leading" id="DNp-i3-khB"/>
-                            <constraint firstItem="GSD-eM-fk7" firstAttribute="top" secondItem="c3P-Dz-vqX" secondAttribute="top" id="JmA-2y-KZf"/>
-                            <constraint firstItem="pQC-I7-acA" firstAttribute="top" secondItem="cLe-OB-lI8" secondAttribute="bottom" id="NCD-z5-dyQ"/>
-                            <constraint firstAttribute="trailing" secondItem="GSD-eM-fk7" secondAttribute="trailing" id="YS0-iw-RZM"/>
+                            <constraint firstAttribute="trailing" secondItem="5MS-R2-faf" secondAttribute="trailing" id="7Ek-fD-uhW"/>
+                            <constraint firstItem="pQC-I7-acA" firstAttribute="top" secondItem="cLe-OB-lI8" secondAttribute="bottom" id="Dyd-4Z-bot"/>
+                            <constraint firstItem="cLe-OB-lI8" firstAttribute="leading" secondItem="gIq-FC-1aj" secondAttribute="leading" id="EZ6-za-LR4"/>
+                            <constraint firstItem="5MS-R2-faf" firstAttribute="top" secondItem="c3P-Dz-vqX" secondAttribute="top" id="OLZ-Nu-LIn"/>
+                            <constraint firstItem="cLe-OB-lI8" firstAttribute="top" secondItem="5MS-R2-faf" secondAttribute="bottom" id="PSd-kF-R1Y"/>
+                            <constraint firstItem="5MS-R2-faf" firstAttribute="leading" secondItem="c3P-Dz-vqX" secondAttribute="leading" id="V5Q-ZN-Dva"/>
                             <constraint firstItem="pQC-I7-acA" firstAttribute="bottom" secondItem="gIq-FC-1aj" secondAttribute="bottom" id="YwC-OA-p4n"/>
-                            <constraint firstItem="GSD-eM-fk7" firstAttribute="leading" secondItem="pQC-I7-acA" secondAttribute="leading" id="cgs-fJ-17n"/>
-                            <constraint firstItem="cLe-OB-lI8" firstAttribute="leading" secondItem="gIq-FC-1aj" secondAttribute="leading" id="d64-tX-6A1"/>
-                            <constraint firstItem="pQC-I7-acA" firstAttribute="top" secondItem="cLe-OB-lI8" secondAttribute="bottom" id="eFk-lD-WbP"/>
-                            <constraint firstItem="GSD-eM-fk7" firstAttribute="trailing" secondItem="cLe-OB-lI8" secondAttribute="trailing" id="edT-Zb-ZG9"/>
                             <constraint firstItem="pQC-I7-acA" firstAttribute="trailing" secondItem="gIq-FC-1aj" secondAttribute="trailing" id="fp2-J5-n6W"/>
-                            <constraint firstItem="cLe-OB-lI8" firstAttribute="top" secondItem="GSD-eM-fk7" secondAttribute="bottom" id="nso-wJ-LqW"/>
-                            <constraint firstItem="cLe-OB-lI8" firstAttribute="trailing" secondItem="gIq-FC-1aj" secondAttribute="trailing" id="pRt-HO-Xhz"/>
-                            <constraint firstItem="GSD-eM-fk7" firstAttribute="trailing" secondItem="pQC-I7-acA" secondAttribute="trailing" id="pnu-Zo-WeP"/>
                             <constraint firstItem="pQC-I7-acA" firstAttribute="leading" secondItem="gIq-FC-1aj" secondAttribute="leading" id="tJN-dr-YKt"/>
-                            <constraint firstItem="GSD-eM-fk7" firstAttribute="bottom" secondItem="cLe-OB-lI8" secondAttribute="top" id="txK-uG-r9g"/>
+                            <constraint firstItem="cLe-OB-lI8" firstAttribute="trailing" secondItem="gIq-FC-1aj" secondAttribute="trailing" id="xT2-EG-7Wj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="gIq-FC-1aj"/>
                     </view>

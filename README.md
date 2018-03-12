@@ -4,9 +4,12 @@
 
 Newsfeed App for Medical News Today
 
+![alt tag](https://user-images.githubusercontent.com/10540496/37304046-69f56dc6-266b-11e8-98d5-ef0da571d774.gif)
+
+
 ### Features
 <ul><li>Newsfeed from Medical News Today API </li>
-<ul><li>JSON Parsing </li>
+<li>JSON Parsing </li>
 </ul>
 
 
