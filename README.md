@@ -10,4 +10,4 @@ Newsfeed App for Medical News Today
 <li>JSON Parsing </li>
 </ul>
 
-![alt tag](https://user-images.githubusercontent.com/10540496/37312658-dca767d2-2686-11e8-8249-0e3f5121b605.png)
+![alt tag](https://github.com/consbulaquena/MNTFeed/blob/master/MNTFeed/Assets.xcassets/mnt.imageset/mnt.jpg)
